@@ -1,0 +1,10 @@
+<ul class="thecard bg-w">
+	<li ui-sref="content({id:item.id})" class="item" ng-repeat="item in list">
+		<img class="logo f-l" ng-src="{{item.imgSrc}}" alt="">
+		<h3 class="title" ng-bind="item.name"></h3>
+		<p class="text" ng-bind="item.abstract"></p>
+		<p class="text">
+			&nbsp;
+		</p>
+	</li>
+</ul>

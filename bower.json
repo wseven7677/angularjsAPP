@@ -1,0 +1,24 @@
+{
+  "name": "shotCard",
+  "authors": [
+    "wseven7677 <c119494@126.com>"
+  ],
+  "description": "my first angularjs project",
+  "main": "",
+  "keywords": [
+    "angularjs"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.3",
+    "angular-ui-router": "ui-router#^0.4.2"
+  }
+}
