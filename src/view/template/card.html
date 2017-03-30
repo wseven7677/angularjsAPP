@@ -1,10 +1,9 @@
 <ul class="thecard bg-w">
 	<li ui-sref="content({id:item.id})" class="item" ng-repeat="item in list">
-		<img class="logo f-l" ng-src="{{item.imgSrc}}" alt="">
-		<h3 class="title" ng-bind="item.name"></h3>
-		<p class="text" ng-bind="item.abstract"></p>
-		<p class="text">
-			&nbsp;
-		</p>
+		<img class="logo f-l" src="image/2233.png" alt="">
+		<h3 class="title" ng-bind="item.job"></h3>
+		<p class="text" ng-bind="item.companyName+'['+item.cityName+']'+' '+item.industryName"></p>
+		<p class="text" ng-bind="item.date"></p>
+		<div class="clear"></div>
 	</li>
 </ul>
