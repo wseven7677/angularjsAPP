@@ -4,6 +4,10 @@ angular.module('app').directive('appCard',[function(){
 	return{
 		restrict:'A',
 		replace:true,
-		templateUrl:'view/template/card.html'
+		templateUrl:'view/template/card.html',
+		scope:{
+			data: '=',
+			filterObj: '='
+		}
 	};
 }]);
