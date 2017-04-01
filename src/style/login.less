@@ -1,0 +1,64 @@
+.login{
+	background-image: url(../image/bk.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	form{
+		.mt(260);
+		.form-line{
+			font-size: 0;
+			margin-left: auto;
+			margin-right: auto;
+			.w(260);
+			.h(40);
+			color: @defaultColor;
+			&:first-child{
+				/*border-bottom: 1px solid @defaultColor;*/
+				margin-bottom: 1px;
+			}
+			input{
+				outline-width: 0;
+				border-width: 0;
+				background-color: @formBgColor;
+				&::-webkit-input-placeholder{
+					color: @defaultColor;
+				}
+				.h(40);
+				.w(190);
+				padding: 0 0 0 20px;
+				vertical-align: bottom;
+			}
+			.icon{
+				background-color: @iconBgColor;
+				.fs(18);
+				.h(40);
+				.lh(40);
+				.w(50);
+				position: relative;
+				top:0;
+
+			}
+		}
+		button{
+			.w(260);
+			.h(35);
+			font-weight: bold;
+			font-size: 18px;
+			&.login-btn{
+				margin-top: 75px;
+				background-color: @headBgColor;
+				color: @defaultColor;			
+			}
+			&.register-btn{
+				margin-top: 20px;
+				background-color: @btnBgColor;
+				color: @headBgColor;
+				border: 1px solid @headBgColor;
+			}
+		}
+	}
+}

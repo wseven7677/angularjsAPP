@@ -1,0 +1,29 @@
+.me{
+	img {
+		.mt(60);
+		.h(100);
+		.w(100);
+		border-radius: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.name{
+		.mt(30);
+	}
+	.btns{
+		.mt(40);
+		button{
+			background-color: @headBgColor;
+			color: @defaultColor;
+			.fs(16);
+			.w(150);
+			.h(95);
+			&.logout{
+				.w(305);
+				.h(40);
+				.mt(20);
+				background-color: @dangerColor;
+			}
+		}
+	}
+}
