@@ -2,5 +2,5 @@
 	<p><span ng-bind="pos.name"></span><span class="ml c-r" ng-bind="pos.salaryName"></span></p>
 	<p><span ng-bind="pos.cityName"></span><span class="ml" ng-bind="experience"></span></p>
 	<p ng-bind="pos.benefit"></p>
-		<span ng-show="isLogin" class="glyphicon {{heartClass}} p-a star"></span>
+		<span ng-show="isLogin" ng-click="favorite();" class="glyphicon {{heartClass}} p-a star"></span>
 </div>

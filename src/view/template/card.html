@@ -1,5 +1,6 @@
 <ul class="thecard bg-w">
-	<li ui-sref="content({id:item.id})" class="item" ng-repeat="item in data|filterByObj:filterObj">
+	<li ui-sref="content({id:item.id})" class="p-r item" ng-repeat="item in data|filterByObj:filterObj">
+		<span ng-if="isFavorite" ng-click="$event.stopPropagation();select(item);" class="p-a icon glyphicon {{item.select?'glyphicon-heart':'glyphicon-heart-empty'}}"></span>
 		<img class="logo f-l" src="image/2233.png" alt="">
 		<h3 class="title" ng-bind="item.job"></h3>
 		<p class="text" ng-bind="item.companyName+'['+item.cityName+']'+' '+item.industryName+' '+item.scaleName"></p>
